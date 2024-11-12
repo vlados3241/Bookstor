@@ -114,6 +114,8 @@ body{
 .navbar-things-down{
   display: flex;
   flex-wrap: wrap;
+  gap: 25px;
+  margin-left: 110px;
 }
 
 
@@ -122,14 +124,16 @@ body{
 }
 
 .catalog{
-  display: inline-block;
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 5px;
 }
 
 .sale{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 5px;
   color: #FF283D;
 }
