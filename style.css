@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: Gosha Sans;
+  font-weight: normal;
+  src: url(/Fonts/PPGoshaSans-Regular.otf);
+}
 
 body{
   font-family: "Roboto";
@@ -13,54 +18,66 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-left: 599px;
-  margin-right: 600px;
+  margin-right: 703px;
+  margin-left: 706px;
   height: 51px;
 }
 
 .header-above-items div div{
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;   
   margin-right: 29px;
   align-items: center;
   color: #1C294DCC;
 }
+
 .header-above-items div div div a{
   text-decoration: none;
   font-size: 14px;
+  line-height: 16px;
   color:#1C294DCC;
+}
+
+.header-above-right div a{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .header-above-items div div div a:hover{
   color:#FF7A00;
+  font-size: 14px;
 }
 
+.city:first-child{
+  gap: 9px;
+}
+.above-left-items div:nth-child(2){
+  gap: 9px
+}
+.above-left-items div:last-child{
+  gap: 8px
+}
 .address{
   margin-left: 30px;
 }
+
+.email{
+  gap: 7px;
+}
+.number{
+  gap: 5px;
+  margin-left: 3px;
+}
+.information{
+  margin-left: 5px;
+}
+
 
 .header-above-items div div:nth-last-child(2),
 .header-above-items div div:last-child{
   margin-right: 0;
 }
-
-.cart-count{                  /* Счетчик корзины  */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  background-color:#FF7A00;
-  color: white;
-  height: 15px;
-  width: 15px;
-  top: 81px;
-  padding: 1px 1px;
-  font-size: 12px;
-  left: 1867px;
-  border-radius: 100%;
-}
-
 /* Header items style end */
 
   /* Header nav style start */
@@ -73,8 +90,8 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: 577px;
-  margin-left: 597px;
+  margin-right: 673px;
+  margin-left: 702px;
   margin-top: 20px;
 }
 
@@ -88,7 +105,11 @@ body{
   flex-wrap: wrap;
   align-items: center;
   margin-right: 30px;
-  gap: 5px;
+  gap: 6px;
+}
+
+.nav-center-right-items div:first-child{
+  gap: 10px;
 }
 
 .nav-center-left-items div{
@@ -101,6 +122,7 @@ body{
 .nav-center-right-items div a{
   text-decoration: none;
   color:#1C294DCC;
+  font-size: 14px;
 }
 
 .nav-center-right-items div a:hover{
@@ -108,24 +130,24 @@ body{
 }
 
 .inp-nav{
-  border: 1px solid #FF7A00;
+  border: 1px solid #DFE0E1;
   height: 38px;
-  width: 573px;
+  width: 449px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 0;
+  padding-left: 15px;
+}
+
+.inp-nav:hover{
+  border: 1px solid #FF7A00;
 }
 
 .inp-nav::placeholder{
-  padding-left: 15px;
+  color: #1C294D80;
+  font-size: 14px;
+  line-height: 20px;
 }
-
-.inp-nav input[type=text]{
-  padding-left: 15px;
-  height:24px;
-  font-size: 15px;
-}
-
 
 .nav-button{
   border: 0;
@@ -141,6 +163,8 @@ body{
 .nav-button a{
   text-decoration: none;
   color: white;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .search {
@@ -155,6 +179,22 @@ body{
   width: 20px;
   height: 20px;
 }
+
+.cart-count{    /* Счетчик корзины  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color:#FF7A00;
+  color: white;
+  height: 13px;
+  width: 13px;
+  bottom: 10px;
+  left: 32px;
+  padding: 1px 1px;
+  font-size: 9px;
+  border-radius: 100%;
+}
 /* Header nav style end */  
 
   /* Navbar things down style start */
@@ -162,8 +202,9 @@ body{
 .navbar-things-down{
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-  margin-left: 597px;
+  align-items: center;
+  gap: 26px;
+  margin-left: 701px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -171,6 +212,7 @@ body{
 .navbar-things-down a{
   text-decoration: none;
   color:#1C294DCC;
+  font-size: 14px;
 }
 
 .navbar-things-down a:hover{
@@ -215,44 +257,38 @@ main{
   padding-top: 30px;
 }
 
-.main-promotion{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  color: #1C294D;
-}
-
 /* Slider style start */
 .slider{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: space-between;
   width: 750px;
   height: 350px;
   background-color:#CCFF90;
-  margin-left: 600px;
   border-radius: 5px;
+  grid-column: span 2;
 }
 
 .slider-two-eq-tree{
-  width: 165px;
-  height: 72px;
+  width: 165.69px;
+  height: 72.32px;
+  margin-top: 121px;
 }
 
 .slider-all-book{
-  width: 165px;
-  color: #263238;
-  font-size: 28px;
-  margin-top: -10px;
+  width: 165.63px;
+  height: 15.95;
+  margin-top: 15px;
   padding-top: 0;
-  font-weight: bold;
 }
 
 .slider-page-marker{
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
+  margin-bottom: 20px;
   gap: 5px;
   height: 2px;
   width: 100%;
@@ -263,7 +299,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 90px;
   height: 90px;
 }
@@ -276,7 +312,7 @@ main{
   width: 40px;
   height: 40px;
   background-color: rgb(250, 250, 250);
-  border-radius:10px ;
+  border-radius: 5px ;
 }
 
 .arrow-right{
@@ -287,7 +323,7 @@ main{
   width: 40px;
   height: 40px;
   background-color: rgb(250, 250, 250);
-  border-radius:10px ;
+  border-radius: 5px ;
 }
 /* Slider end */
 
@@ -297,6 +333,8 @@ main{
   width: 360px;
   height: 520px;
   border-radius: 5px;
+  /* margin-right: 640px; */
+  grid-row: span 3;
 }
 
 .book-day-card-header{
@@ -304,7 +342,7 @@ main{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 22px;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -332,42 +370,46 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
-.book-day-card-inscr-cor-low{
+.book-day-card-inf{
+  margin-top: 13px;
+}
+
+.book-day-card-inscr-cor-law{
   color: rgba(28, 41, 77, 0.5);
   font-size: 12px;
   margin-left: 20px;
-  margin-top: 15px;
 }
 .book-day-card-descrip{
   color: #1C294D;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 19px;
   margin-left: 20px;
-  margin-top: 8px;
-  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 7px;
+
 }
 
 .book-day-card-name{
   color: #1C294D;
   font-size: 12px;
   margin-left: 20px;
-  margin-top: 8px;
 }
 
 .book-day-card-price{
   color: #1C294D;
   font-size: 18px;
   margin-left: 20px;
-  margin-top: 8px;
+  margin-top: 7px;
   font-weight: bold;
 }
 
 .book-day-card-items{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-left: 20px;
   gap: 10px;
 }
@@ -384,12 +426,11 @@ main{
 }
 
 .book-day-card-basket div{
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 14px;
   margin-left: 10px;
 }
 
-.book-day-carfd-bookmark {
+.book-day-card-bookmark {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -400,6 +441,204 @@ main{
   border-radius: 5px;
 }
 /* Book of day card style end */
+
+  /* Banner card style start */
+.grid-conteiner{
+  display: grid;
+  width: 500px;
+  grid-template-columns: auto auto auto;
+  color: #1C294D;
+  gap: 30px;
+  margin-right: 640px;
+  margin-left: 701px;
+}
+
+.left-banner-card{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 360px;
+  height: 140px;
+  border-radius: 5px;
+  background-color: #6D378F;
+  font-family: "Gosha Sans";
+  font-size: 20px;
+  color: white;
+}
+
+.left-banner-text{
+  margin-left: 25px;
+  margin-right: 13px;
+  position: relative;
+}
+
+.orange-line{
+  position: absolute;
+  z-index: 0;
+  margin-left: 15px;
+  margin-bottom: 45px;
+}
+
+.right-banner-card{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 360px;
+  height: 140px;
+  border-radius: 5px;
+  background-color: #FFD8EF;
+  font-family: "Gosha Sans";
+  font-size: 20px;
+  color: #1C294DCC;
+}
+
+.right-banner-text{
+  margin-left: 25px;
+  margin-right: 23px;
+  position: relative;
+}
+
+.green-line{
+  position: absolute;
+  z-index: 0;
+  margin-top: 52px;
+  margin-left: 48px;
+}
+/* Banner card style end */
+
+  /* Book card style start */
+.grid-box-book-card{
+  
+}
+
+.title-book-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 701px;
+  margin-left: 701px;
+  background-color: white;
+  
+}
+
+.title-book-card p{
+  font-size: 20px;
+  line-height: 20px;
+  color: #1C294D;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.arrow-page-slider{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 61px;
+  height: 30px;
+  border: 1px solid #1C294D26;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+.arrow-right-page-slider,
+.arrow-left-page-slider{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.arrow-right-page-slider{
+  border-right: 1px solid #1C294D26;
+}
+
+.card-book{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book{
+  width: 263px;
+  height: 460px;
+  border: 1px solid #1C294D26;
+  border-left-color: white;
+  margin-right: 701px;
+  margin-left: 701px;
+  background-color: white;
+
+}
+
+.book img{
+  margin-top: 25px;
+  margin-left: 62px;
+}
+
+.book-cor-law{
+  line-height: 15px;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 14px;
+  color: #1C294D80;
+}
+
+.book-discription{
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 20px;
+  margin-top: 8px;
+  color: #1C294D;
+} 
+
+.book-autor-name{
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 20px;
+  margin-top: 8px;
+  color: #1C294D;
+}
+
+.book-price{
+  font-size: 18px;
+  line-height: 20px;
+  margin-left: 20px;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #1C294D;
+}
+
+.book-raiting{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 52px;
+  height: 25px;
+  border-radius: 5px;
+  background: #fde7b0;
+}
+.yellow-star{
+  width: 12.5px;
+  height: 11.88px;
+}
+.num-raiting{
+  display: block;
+  color: #FBC02D;
+  font-size: 12px;
+  line-height: 13px;
+}
+.num-raiting span{
+  display: block;
+}
+/* Book card style end */
 
 /* Main style end */
 /*---------------------------------------------------*/
