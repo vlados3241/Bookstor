@@ -10,6 +10,13 @@ body{
   color: #1C294DCC; 
 }
 
+.display-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header style start */
 
   /* Header items style start */
@@ -458,7 +465,6 @@ main{
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  z-index: 1;
   width: 360px;
   height: 140px;
   border-radius: 5px;
@@ -511,10 +517,6 @@ main{
 /* Banner card style end */
 
   /* Book card style start */
-.grid-box-book-card{
-  
-}
-
 .title-book-card{
   display: flex;
   flex-wrap: wrap;
@@ -560,26 +562,70 @@ main{
 }
 
 .card-book{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 1141px;
 }
 
 .book{
-  width: 263px;
+  position: relative;
+  width: 283.8px;
   height: 460px;
   border: 1px solid #1C294D26;
   border-left-color: white;
-  margin-right: 701px;
-  margin-left: 701px;
   background-color: white;
+}
 
+.first-book{
+  margin-left: 701px;
+}
+
+.fourth-book{
+  border-right: 0;
 }
 
 .book img{
   margin-top: 25px;
   margin-left: 62px;
+}
+
+.best-seller{
+  position: absolute;
+  width: 86px;
+  height: 25px;
+  border-radius: 5px;
+  background: #EEE9F7;
+  margin: 0 auto;
+  color: #AC8EE3;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 20px 20px;
+}
+
+.book-card-promotion{
+  position: absolute;
+  width: 54px;
+  height: 25px;
+  border-radius: 5px;
+  background: #FFEEEE;
+  margin: 0 auto;
+  color: #FF4F52;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 55px 20px;
+}
+
+.new-book{
+  position: absolute;
+  width: 70px;
+  height: 25px;
+  border-radius: 5px;
+  background: #E2F6EC;
+  margin: 0 auto;
+  color: #3DC47E;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 20px 20px;
 }
 
 .book-cor-law{
@@ -590,12 +636,13 @@ main{
   color: #1C294D80;
 }
 
-.book-discription{
+.book-title{
   font-size: 14px;
   line-height: 19px;
   margin-left: 20px;
   margin-top: 8px;
   color: #1C294D;
+  font-weight: bold;
 } 
 
 .book-autor-name{
@@ -603,7 +650,7 @@ main{
   line-height: 15px;
   margin-left: 20px;
   margin-top: 8px;
-  color: #1C294D;
+  color: #31384b;
 }
 
 .book-price{
@@ -615,30 +662,264 @@ main{
   color: #1C294D;
 }
 
-.book-raiting{
+.book-stat{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+}
+
+.book-raiting{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4.25px;
   width: 52px;
   height: 25px;
   border-radius: 5px;
-  background: #fde7b0;
+  margin-left: 20px;
+  background-color: #fff0cf;
 }
-.yellow-star{
-  width: 12.5px;
-  height: 11.88px;
+.book-raiting img{
+  margin-top: 0;
+  margin-left: 0;
 }
 .num-raiting{
-  display: block;
   color: #FBC02D;
   font-size: 12px;
   line-height: 13px;
 }
-.num-raiting span{
-  display: block;
+
+.book-likes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 144px;
+  height: 25px;
+  border-radius: 5px;
+  margin-right: 30px;
+  background-color: #dfe5ffcc;
+}
+
+.likes-inform{
+  font-size: 12px;
+  line-height: 12px;
+  color: #7986CB;
+}
+
+.book-likes img{
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.book-card-items{
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.basket-button{
+  width: 146px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #EEEEEE;
+  gap: 5px;
+}
+
+.basket-button img{
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.button-words{
+  font-size: 14px;
+  line-height: 15px;
+  color: #1C294D;
+  line-height: bold;
+}
+
+.bookmark-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #EEEEEE;
+  margin-right: 40px;
+}
+
+.bookmark-button img{
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.orange-book-raiting{
+  width: 52px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #ffecd9;
+  margin-left: 20px;
+  gap: 5px;
+}
+
+.orange-num-raiting{
+  color: #FFA34D;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.orange-book-raiting img{
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.book-price-promotion{
+  justify-content:flex-start;
+  align-items: flex-end;
+  margin-top: 8px;
+  gap: 7px;
+
+}
+
+.red-book-price{
+  color: #FD3A3A;
+  font-size: 18px;
+  line-height: 20px; 
+  font-weight: bold;
+}
+
+.cross-out-book-price{
+  font-size: 12px;
+  line-height: 15px;
+  color: #1C294D80;
+
+  text-decoration: line-through;
+  text-decoration-color:#FD3A3A;
+}
+
+.green-benefit-book-price{
+  font-size: 12px;
+  line-height: 14px;
+  color: #0DB98C;
+}
+
+.show-all-book{
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294D;
+  width: 1142px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-left: 701px;
 }
 /* Book card style end */
 
+  /* Banner style start */
+.banner{
+  position: relative;
+  z-index: 1;
+  width: 1142px;
+  height: 105px;
+  border-radius: 5px;
+  background-color: #0288D1;
+  margin-left: 701px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 14px;
+}
+
+.banner-text{
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+}
+
+.banner-text img{
+  position: absolute;
+  z-index: 0;
+}
+
+.banner-input {
+  gap: 10px;
+}
+
+.banner-input input{
+  width: 418px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #FFFFFF;
+}
+
+.banner-left::placeholder{
+  color: #1C294D80;
+}
+
+.banner-button{
+  width: 137px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: #0288D1;
+  border: 1px solid #FFFFFF
+}
+/* Banner style end */
+
+/* Shop inform style start */
+.box{
+  width: 263px;
+  height: 150px;border-radius: 5px;
+  background-color: white;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+.box img{
+  position: absolute;
+  z-index: 0;
+  margin-top: 0;
+  margin-right: 0;
+
+
+}
+
+.grid-box-shop-inform{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  gap: 30px;
+  width: 1142px;
+  margin-left: 701px;
+}
+
+.box-text{
+  position: relative;
+  font-size: 12px;
+  line-height: 19px;
+  color: #727272;
+  width: 153px;
+  height: 66px;
+  margin-right: 1px;
+}
+
+.bonus-program-text{
+  width: 160px;
+}
+
+.box-text div:first-child{
+  font-size: 16px;
+  line-height: 25px;
+  color: #1C294D;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* Shop inform style end */
+
 /* Main style end */
 /*---------------------------------------------------*/
+
