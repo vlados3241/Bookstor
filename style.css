@@ -8,6 +8,9 @@
 body{
   font-family: "Roboto";
   color: #1C294DCC; 
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
 }
 
 .display-flex{
@@ -262,25 +265,26 @@ body{
 main{
   background-color: rgb(250, 250, 250);
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Slider style start */
 .slider{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  width: 750px;
   height: 350px;
   background-color:#CCFF90;
   border-radius: 5px;
   grid-column: span 2;
 }
 
+.slider-flexbox{
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 121px;
+}
+
 .slider-two-eq-tree{
   width: 165.69px;
   height: 72.32px;
-  margin-top: 121px;
 }
 
 .slider-all-book{
@@ -295,10 +299,10 @@ main{
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
-  margin-bottom: 20px;
   gap: 5px;
   height: 2px;
   width: 100%;
+  margin-top: 98.21px;
 }
 
 .arrow-left-box,
@@ -306,7 +310,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   width: 90px;
   height: 90px;
 }
@@ -525,7 +529,7 @@ main{
   margin-right: 701px;
   margin-left: 701px;
   background-color: white;
-  
+
 }
 
 .title-book-card p{
@@ -819,8 +823,6 @@ main{
 
   /* Banner style start */
 .banner{
-  position: relative;
-  z-index: 1;
   width: 1142px;
   height: 105px;
   border-radius: 5px;
@@ -829,20 +831,21 @@ main{
   margin-top: 30px;
   margin-bottom: 30px;
   gap: 14px;
+  position: relative;
 }
 
 .banner-text{
   position: relative;
-  z-index: 1;
   font-size: 18px;
   line-height: 20px;
   color: white;
 }
 
-.banner-text img{
+.banner-lil-orange-line{
   position: absolute;
   z-index: 0;
-}
+  margin-right: 890px;
+ }
 
 .banner-input {
   gap: 10px;
@@ -871,22 +874,6 @@ main{
 /* Banner style end */
 
 /* Shop inform style start */
-.box{
-  width: 263px;
-  height: 150px;border-radius: 5px;
-  background-color: white;
-  justify-content: flex-end;
-  margin-right: 25px;
-}
-.box img{
-  position: absolute;
-  z-index: 0;
-  margin-top: 0;
-  margin-right: 0;
-
-
-}
-
 .grid-box-shop-inform{
   position: relative;
   display: grid;
@@ -895,6 +882,20 @@ main{
   gap: 30px;
   width: 1142px;
   margin-left: 701px;
+  margin-bottom: 30px;
+}
+
+.box{
+  width: 263px;
+  height: 150px;border-radius: 5px;
+  background-color: white;
+  justify-content: flex-end;
+}
+.box img{
+  position: absolute;
+  z-index: 0;
+  margin-top: 0;
+  margin-right: 0;
 }
 
 .box-text{
@@ -904,7 +905,7 @@ main{
   color: #727272;
   width: 153px;
   height: 66px;
-  margin-right: 1px;
+  margin-right: 12px;
 }
 
 .bonus-program-text{
@@ -918,7 +919,235 @@ main{
   font-weight: bold;
   margin-bottom: 5px;
 }
+
+.fast-delivery img{
+  margin-right: 154px;
+}
+.secure-pay img{
+  margin-right: 164px;
+}
+.bonus-program img{
+  margin-right: 160px;
+}
+.large-selection img{
+  margin-right: 144px;
+  margin-bottom: 10px;
+}
 /* Shop inform style end */
+
+  /* News cards style start */
+.grid-news-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1142px;
+  margin-left: 701px;
+  background-color: white;
+  border-top: 1px solid #1C294D26;
+
+}
+
+.grid-news-cards div img{
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+.first-news-card div,
+.first-news-card button,
+.first-news-card img{
+  margin-left: 20px;
+}
+.second-news-card div,
+.second-news-card button,
+.second-news-card img{
+  margin-left: 30.335px;
+}
+.third-news-card div,
+.third-news-card button,
+.third-news-card img{
+  margin-left: 40.67px;
+}
+
+.third-news-card, 
+.second-news-card{
+  border-left: 1px solid #1C294D26;
+}
+
+.news-card-date{
+  width: 320px;
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1C294D80;
+}
+.card-news-title{
+  width: 320px;
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #1C294D;
+}
+.card-news-discription{
+  width: 320px;
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294D;
+}
+.read-button{
+  width: 180px;
+  height: 40px;
+  border: 1px solid #1C294D26;
+  border-radius: 5px;
+  margin-top: 12px;
+  margin-bottom: 25px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294D;
+}
+/* News cards style start */
+.footer-div-background-color{
+  background: #2029320a;
+}
+
+.footer-div{
+  width: 1142px;
+  margin-left: 701px;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-input input{
+  width: 443px;
+  height: 40px;
+  padding-left: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #282F3626;
+}
+
+.footer-input button{
+  width: 50px;
+  height: 42px;
+  border: 0;
+  background-color: #FF5C00;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.links{
+  gap: 15px;
+}
+  
+.footer-items{
+  background-color: white;
+}
+
+.title-footer-items{
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 701px;
+  gap: 30px;
+  padding-top: 45px;
+}
+
+.foot-title-buyers,
+.foot-title-publish,
+.foot-title-books,
+.foot-title-price-list,
+.foot-title-contacts,
+.first-foot-column,
+.second-foot-column,
+.third-foot-column,
+.fourth-foot-column,
+.fift-foot-column{
+  width: 165px;
+}
+
+.title-footer-items span{
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294D;
+  font-weight: bold;
+}
+
+.foot-columns{
+  justify-content: flex-start;
+  margin-left: 701px;
+  gap: 30px;
+  margin-top: 45px;
+}
+
+.foot-column{
+  width: 165px;
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294D;
+}
+
+.foot-column > div{
+  margin-top: 15px;
+}
+
+.price-list-column{
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 25px;
+  gap: 5px;
+}
+
+.foot-pdf-file{
+  width: 135px;
+}
+
+.download-price-list{
+  font-size: 14px;
+  line-height: 20px;
+  color: #282F36CC;
+}
+
+.pdf-stats{
+  font-size: 12px;
+  line-height: 15px;
+  color: #282F3680;
+}
+
+.conatacts-column div a{
+  text-decoration: none;
+  color: #1C294DCC;
+}
+
+.foot-email,
+.foot-number{
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+.footer-down{
+  width: 1142px;
+  height: 105px;
+  margin-top: 45px;
+  margin-left: 701px;
+  justify-content: space-between;
+  border-top: 1px solid #282F3626;
+}
+
+.footer-down:first-child{
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294D80;
+}
+.footer-down:nth-child(2),
+.footer-down:nth-last-child(1),
+.footer-down:last-child{
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294DCC;
+}
+
 
 /* Main style end */
 /*---------------------------------------------------*/
