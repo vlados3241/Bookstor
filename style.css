@@ -58,6 +58,10 @@ header{
   margin-left: 30px;
 }
 
+.busket div{
+  margin-left: 0;
+}
+
 .header-above-items div div div a:hover{
   color:#FF7A00;
   font-size: 14px;
@@ -173,17 +177,18 @@ header{
 }
 
 .cart-count{    /* Счетчик корзины  */
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  background-color:#FF7A00;
+  background-color: #FF7A00;
   color: white;
   height: 13px;
   width: 13px;
   padding: 1px 1px;
   font-size: 9px;
-  border-radius: 100%;
+  border-radius: 100%;   
+  top: 75px;
+  right: 772px;
+
+
 }
 /* Header nav style end */  
 
@@ -1011,7 +1016,7 @@ main{
 
 .footer-input button{
   width: 50px;
-  height: 42px;
+  height: 44px;
   border: 0;
   background-color: #FF5C00;
   border-top-right-radius: 5px;
@@ -1137,6 +1142,11 @@ main{
 
 /* Desktop media */
 @media screen and (max-width: 1366px) {
+  .cart-count{
+    top: 75px;
+    right: 166px;
+  }
+
   .header-above-items,
   .header-center-nav,
   .navbar-things-down,
@@ -1148,7 +1158,7 @@ main{
   .grid-box-shop-inform,
   .footer-div,
   .grid-news-cards,
-  .title-footer-items,
+  .title-footer-items,.cart-count
   .footer-down{
     margin-left: 113px;
   }
@@ -1156,7 +1166,7 @@ main{
 /* Desktop media */
 
 /* Mobile media */
-@media screen and (min-width: 667px){
+@media screen and (min-width: 376px){
   .mobile-header, 
   .mobile-main,
   .mobile-footer{
@@ -1174,6 +1184,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-left: 10px;
     width: 375px;
     height: 70px;
     margin-left: 1px;
@@ -1198,8 +1209,8 @@ main{
   }
   .cart-count{
     position: relative;
-    left: 15px;
-    top: 10px;
+    left: 17px;
+    top: 11px;
   }
   /* Mobile header style end */
 
@@ -1419,6 +1430,70 @@ main{
   border-bottom: 1px solid #1C294D26;
   width: 100%;
   height: 80px;
+}
+.mobile-footer-input{
+  height: 80px;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #1C294D0D;
+  border-bottom: 1px solid #1C294D26;
+}
+.mobile-input input{
+  width: 210px;
+  height: 40px;
+  border: 1px solid #282F3626;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 0;
+  padding-left: 15px;
+}
+.mobile-input button{
+  width: 50px;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 0;
+  background-color: #FF5C00;
+}
+.footer-item{
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid #282F3626;
+}
+.footer-price-list{
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid #282F3626;
+}
+.mobile-inf{
+  height: 85px;
+  border-bottom: 1px solid #282F3626;
+
+}
+.mobile-inf div{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1C294D80;
+}
+.footer-number,
+.footer-email,
+.footer-address,
+.footer-publish{
+  height: 60px;
+  justify-content: flex-start;
+  padding-left: 20px;
+  gap: 5px;
+  border-bottom: 1px solid #282F3626;
+}
+.footer-publish a{
+  color: #1C294D80;
 }
 /* Mobile footer */
 }
