@@ -30,10 +30,7 @@ a{
 
   /* Header items style start */
     /* Верхняя часть шапки сайта */
-header{
-  
-  background-color: white;
-}
+header{background-color: white;}
 
 .header-above-items{
   display: flex;
@@ -54,13 +51,9 @@ header{
   gap: 5px;
 }
 
-.address{
-  margin-left: 30px;
-}
+.address{margin-left: 30px;}
 
-.busket div{
-  margin-left: 0;
-}
+.busket div{margin-left: 0;}
 
 .header-above-items div div div a:hover{
   color:#FF7A00;
@@ -68,18 +61,13 @@ header{
 }
 
 .header-above-items div div:nth-last-child(2),
-.header-above-items div div:last-child{
-  margin-right: 0;
-}
+.header-above-items div div:last-child{margin-right: 0;}
 
   /* Верхняя часть шапки сайта */
 /* Header items style end */
 
   /* Header nav style start */
-.border-conteiner{
-  border-top: 1px solid #DFE0E1;
-  
-}
+.border-conteiner{border-top: 1px solid #DFE0E1;}
 
 .header-center-nav{
   display: flex;
@@ -104,9 +92,7 @@ header{
   gap: 6px;
 }
 
-.nav-center-right-items div:first-child{
-  gap: 10px;
-}
+.nav-center-right-items div:first-child{gap: 10px;}
 
 .nav-center-left-items div{
   display: flex;
@@ -121,9 +107,7 @@ header{
   font-size: 14px;
 }
 
-.nav-center-right-items div a:hover{
-  color: #FF7A00;
-}
+.nav-center-right-items div a:hover{color: #FF7A00;}
 
 .inp-nav{
   border: 1px solid #DFE0E1;
@@ -135,9 +119,7 @@ header{
   padding-left: 15px;
 }
 
-.inp-nav:hover{
-  border: 1px solid #FF7A00;
-}
+.inp-nav:hover{border: 1px solid #FF7A00;}
 
 .inp-nav::placeholder{
   color: #1C294D80;
@@ -211,14 +193,10 @@ header{
   font-size: 14px;
 }
 
-.navbar-things-down a:hover{
-  color: #FF7A00;
-}
+.navbar-things-down a:hover{color: #FF7A00;}
 
 
-.navbar-things-down ul{
-  list-style-type: none;  
-}
+.navbar-things-down ul{list-style-type: none;  }
 
 .catalog{
   display: flex;
@@ -233,16 +211,11 @@ header{
   align-items: center;
   gap: 5px;
 }
-.sale a{
-  color: #FF283D;
-}
-.sale a:hover{
-  color: #ff001954;
-}
+.sale a{color: #FF283D;}
 
-.img{
-  fill: #FF7A00;
-}
+.sale a:hover{color: #ff001954;}
+
+.img{fill: #FF7A00;}
   /* Navbar things down style end */  
 /* Header style end */
 
@@ -253,8 +226,6 @@ main{
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-
 
 /* Slider style start */
 .slider{
@@ -371,9 +342,7 @@ main{
   margin-top: 20px;
 }
 
-.book-day-card-inf{
-  margin-top: 13px;
-}
+.book-day-card-inf{margin-top: 13px;}
 
 .book-day-card-inscr-cor-law{
   color: rgba(28, 41, 77, 0.5);
@@ -567,13 +536,9 @@ main{
   background-color: white;
 }
 
-.first-book{
-  margin-left: 701px;
-}
+.first-book{margin-left: 701px;}
 
-.fourth-book{
-  border-right: 0;
-}
+.fourth-book{border-right: 0;}
 
 .book img{
   margin-top: 25px;
@@ -708,7 +673,6 @@ main{
 
 .basket-button{
   display: flex;
-
   width: 146px;
   height: 40px;
   border-radius: 5px;
@@ -831,9 +795,7 @@ main{
   margin-right: 890px;
  }
 
-.banner-input {
-  gap: 10px;
-}
+.banner-input {gap: 10px;}
 
 .banner-input input{
   width: 418px;
@@ -843,9 +805,7 @@ main{
   border: 1px solid #FFFFFF;
 }
 
-.banner-left::placeholder{
-  color: #1C294D80;
-}
+.banner-left::placeholder{color: #1C294D80;}
 
 .banner-button{
   width: 137px;
@@ -876,6 +836,7 @@ main{
   background-color: white;
   justify-content: flex-end;
 }
+
 .box img{
   position: absolute;
   z-index: 0;
@@ -893,9 +854,7 @@ main{
   margin-right: 12px;
 }
 
-.bonus-program-text{
-  width: 160px;
-}
+.bonus-program-text{width: 160px;}
 
 .box-text div:first-child{
   font-size: 16px;
@@ -905,15 +864,12 @@ main{
   margin-bottom: 5px;
 }
 
-.fast-delivery img{
-  margin-right: 154px;
-}
-.secure-pay img{
-  margin-right: 164px;
-}
-.bonus-program img{
-  margin-right: 160px;
-}
+.fast-delivery img{margin-right: 154px;}
+
+.secure-pay img{margin-right: 164px;}
+
+.bonus-program img{margin-right: 160px;}
+
 .large-selection img{
   margin-right: 144px;
   margin-bottom: 10px;
@@ -939,24 +895,18 @@ main{
 
 .first-news-card div,
 .first-news-card button,
-.first-news-card img{
-  margin-left: 20px;
-}
+.first-news-card img{margin-left: 20px;}
+
 .second-news-card div,
 .second-news-card button,
-.second-news-card img{
-  margin-left: 30.335px;
-}
+.second-news-card img{margin-left: 30.335px;}
+
 .third-news-card div,
 .third-news-card button,
-.third-news-card img{
-  margin-left: 40.67px;
-}
+.third-news-card img{margin-left: 40.67px;}
 
 .third-news-card, 
-.second-news-card{
-  border-left: 1px solid #1C294D26;
-}
+.second-news-card{border-left: 1px solid #1C294D26;}
 
 .news-card-date{
   width: 320px;
@@ -993,9 +943,7 @@ main{
   color: #1C294D;
 }
 /* News cards style start */
-.footer-div-background-color{
-  background: #2029320a;
-}
+.footer-div-background-color{background: #2029320a;}
 
 .footer-div{
   width: 1142px;
@@ -1023,13 +971,9 @@ main{
   border-bottom-right-radius: 5px;
 }
 
-.links{
-  gap: 15px;
-}
+.links{gap: 15px;}
   
-.footer-items{
-  background-color: white;
-}
+.footer-items{background-color: white;}
 
 .title-footer-items{
   align-items: flex-start;
@@ -1048,9 +992,7 @@ main{
 .second-foot-column,
 .third-foot-column,
 .fourth-foot-column,
-.fift-foot-column{
-  width: 165px;
-}
+.fift-foot-column{width: 165px;}
 
 .title-footer-items span{
   font-size: 14px;
@@ -1074,9 +1016,7 @@ main{
   color: #1C294D;
 }
 
-.foot-column > div{
-  margin-top: 15px;
-}
+.foot-column > div{margin-top: 15px;}
 
 .price-list-column{
   justify-content: flex-start;
@@ -1085,9 +1025,7 @@ main{
   gap: 5px;
 }
 
-.foot-pdf-file{
-  width: 135px;
-}
+.foot-pdf-file{width: 135px;}
 
 .download-price-list{
   font-size: 14px;
@@ -1177,9 +1115,7 @@ main{
 @media screen and (max-width: 375px) {
 
   /* Mobile header style start */
-  header, main, footer{
-    display: none;
-  }
+  header, main, footer{display: none;}
   .mobile-header{
     display: flex;
     flex-wrap: wrap;
@@ -1235,9 +1171,7 @@ main{
     width: 82.81px;
     margin-top: 10px;
   }
-  .slider-page-marker{
-    margin-top: 40px;
-  }
+  .slider-page-marker{margin-top: 40px;}
   /* Slider */     
 
   /* Book day */
@@ -1281,9 +1215,8 @@ main{
     width: 176px;
     height: 540px;
   }
-  .book img{
-    margin-left: 26px;
-  }
+  .book img{margin-left: 26px;}
+
   .best-seller{
     width: 86px;
     height: 25px;
@@ -1419,9 +1352,7 @@ main{
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.read-button{
-  width: 325px;
-}
+.read-button{width: 325px;}
 /* News cards */
 
 /* Mobile footer */
@@ -1492,9 +1423,7 @@ main{
   gap: 5px;
   border-bottom: 1px solid #282F3626;
 }
-.footer-publish a{
-  color: #1C294D80;
-}
+.footer-publish a{color: #1C294D80;}
 /* Mobile footer */
 }
   /* Mobile media */
