@@ -1079,7 +1079,7 @@ main{
 /* Media start */
 
 /* Desktop media */
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1367px) {
   .cart-count{
     top: 75px;
     right: 166px;
@@ -1096,7 +1096,8 @@ main{
   .grid-box-shop-inform,
   .footer-div,
   .grid-news-cards,
-  .title-footer-items,.cart-count
+  .title-footer-items,
+  .cart-count,
   .footer-down{
     margin-left: 113px;
   }
