@@ -1079,6 +1079,30 @@ main{
 /* Media start */
 
 /* Desktop media */
+@media screen and (min-width: 1367px) {
+  .cart-count{
+    top: 75px;
+    right: 224px;
+  }
+
+  .header-above-items,
+  .header-center-nav,
+  .navbar-things-down,
+  .grid-conteiner,
+  .title-book-card,
+  .first-book,
+  .banner,
+  .show-all-book,
+  .grid-box-shop-inform,
+  .footer-div,
+  .grid-news-cards,
+  .title-footer-items,
+  .cart-count,
+  .footer-down{
+    margin-left: 160px;
+  }
+}
+
 @media screen and (max-width: 1367px) {
   .cart-count{
     top: 75px;
