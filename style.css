@@ -167,8 +167,8 @@ header{background-color: white;}
   padding: 1px 1px;
   font-size: 9px;
   border-radius: 100%;   
-  top: 75px;
-  right: 772px;
+  top: 4px;
+  right: 55px;
 
 
 }
@@ -666,6 +666,10 @@ main{
   gap: 5px;
 }
 
+.basket{
+  position: relative;
+}
+
 .basket-button img{
   margin-top: 0;
   margin-left: 0;
@@ -1066,11 +1070,11 @@ main{
 
 /* Desktop media */
 @media screen and (min-width: 1367px) {
+  /* .basket{ position: relative; } */
   .cart-count{
-    top: 75px;
-    right: 224px;
+    top: 3px;
+    right: 55px;
   }
-
   .header-above-items,
   .header-center-nav,
   .navbar-things-down,
@@ -1083,7 +1087,7 @@ main{
   .footer-div,
   .grid-news-cards,
   .title-footer-items,
-  .cart-count,
+
   .footer-down{
     margin-left: 160px;
   }
@@ -1091,8 +1095,8 @@ main{
 
 @media screen and (max-width: 1367px) {
   .cart-count{
-    top: 75px;
-    right: 166px;
+    top: 3px;
+    right: 55px;
   }
 
   .header-above-items,
@@ -1107,7 +1111,7 @@ main{
   .footer-div,
   .grid-news-cards,
   .title-footer-items,
-  .cart-count,
+
   .footer-down{
     margin-left: 113px;
   }
@@ -1144,6 +1148,9 @@ main{
     width: 20px;
     height: 20px;
   }
+  .mobile-basket{
+    position: relative;
+  }
   .mobile-basket,
   .mobile-basket img{
     width: 25px;
@@ -1159,8 +1166,8 @@ main{
   }
   .cart-count{
     position: absolute;
-    right: 6px;
-    top: 33px;
+    right: -7px;
+    top: -4px;
   }
   /* Mobile header style end */
 
